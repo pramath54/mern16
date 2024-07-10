@@ -1,0 +1,101 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: purple;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+
+  font-weight: 400;
+  font-style: normal;
+
+  width: 100%;
+  align-items: center;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 1.563rem;
+}
+
+.navbar > .nav-link {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+  width: 40%;
+}
+
+.mainSection {
+  padding-top: 1.8rem;
+  background-image: url("/Münster\,_LVM\,_Bürogebäude_--_2013_--_5149-51.jpg");
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+}
+.mainSection > #main-sec-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  background: -webkit-linear-gradient(rgba(0, 0, 255, 0.888), rgb(22, 178, 30));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainSection > #main-sec-heading > span {
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(183, 209, 15));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mainSection > #mainPara {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  text-align: center;
+  color: blanchedalmond;
+}
+.travel-section {
+  width: 100%;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.travel-section > #travel-item {
+  width: auto;
+}
+#img-cont > img {
+  height: 12.5rem;
+}
+#travel-title > h4 {
+  font-family: "roboto", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+#travel-desc > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar > .nav-link {
+    display: block;
+    text-align: right;
+  }
+  .mainSection {
+    display: relative;
+  }
+  .mainSection > #main-sec-heading {
+    font-size: 2.3rem;
+  }
+  .mainSection > #main-para {
+    font-size: 1rem;
+  }
+
+  .travel-section {
+    width: 50%;
+    grid-template-columns: auto;
+  }
+}
